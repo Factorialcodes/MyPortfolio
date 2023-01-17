@@ -16,7 +16,7 @@ export const HeroWrapper =  styled.div`
     max-width: 1100px;
     margin-right: auto;
     margin-left: auto;
-    padding: 0 24px;
+    /* padding: 0 24px; */
     justify-content: center;
     /* background-color: green; */
 
@@ -32,12 +32,17 @@ export const InfoRow =  styled.div`
     @media screen and (max-width:768px){
         /* grid-template-areas:${({imgStart}) => (imgStart? `'col1' 'col2'` : `'col1' 'col1' col2 col2;`)}; */
     }
- 
-`
+    
+    `
 export const Column1 = styled.div`
     margin-bottom: 15px;
     padding: 0 15px;
     grid-area: col1;
+    
+    @media screen and (max-width:768px){
+        align-items: center;
+
+    }
     /* border: 1px solid black; */
     `
 export const Column2 = styled.div`
@@ -51,6 +56,12 @@ export const TextWrapper= styled.div`
     max-width:540px;
     padding-top: 0;
     padding-bottom: 60px;
+
+    @media screen and (max-width:768px){
+    /* grid-template-areas:${({imgStart}) => (imgStart? `'col1' 'col2'` : `'col1' 'col1' col2 col2;`)}; */
+    text-align: center;
+    align-items: center;
+}
 `
 export const TopLine= styled.div`
     color: #274a8b;
@@ -60,16 +71,17 @@ export const TopLine= styled.div`
     letter-spacing: 1.4px;
     text-transform: uppercase;
     margin-bottom: 16px;
+    
 
-    @media screen and (max-width:768px){
-        /* grid-template-areas:${({imgStart}) => (imgStart? `'col1' 'col2'` : `'col1' 'col1' col2 col2;`)}; */
-        text-align: center;
-    }
 ` 
 
 export const BtnWrap = styled.div`
     display: flex;
     justify-content: flex-start;
+    @media screen and (max-width: 768px){
+        justify-content: center;
+
+    }
 `
 
 export const ImgWrap = styled.div`
@@ -77,11 +89,12 @@ export const ImgWrap = styled.div`
     height: 100%;
 `
 export const Img = styled.img`
-    max-width: 400px;
-    height: 100%;
+    max-width: 360px;
+    height: auto;
 
-    @media screen and (max-width: 768px){
-        max-width: 320px;
+    @media screen and (max-width: 1000px){
+        max-width: 200px;
+
     }
 `
 export const Button = styled.button`
@@ -106,6 +119,12 @@ export const Button = styled.button`
         background-color: white ;
         color: #274a8b;
     }
+
+    @media screen and (max-width: 768px){
+        align-items: center;
+
+    }
+    
 `
 export const ColumnSocials = styled.div`
     color: #274a8b ;

@@ -9,6 +9,6 @@ export const MyContact ={
     topLine:'Building innovative solutions, one line of code at a time',
     img:require('../../Images/Layer2.png'),
     socialTwitter:require('../../Images/Whatsapp.png'),
-    size:'400px',
+    size:'300px',
     sizeImg:'40px'
 }

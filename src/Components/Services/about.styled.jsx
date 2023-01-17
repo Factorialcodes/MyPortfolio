@@ -3,14 +3,14 @@ import styled from "styled-components"
 export const HeroContainer =  styled.div`
     color: #fff;
     /* background-color: rgba(34, 85, 221, 0.333); */
-    margin-top: 50px;
-    margin-bottom: 50px;
+    /* margin-top: 50px; */
+    /* margin-bottom: 50px; */
     height: auto;
     @media screen and (max-width:768px) {
         padding: 100px 0;
         width: 100%;
         margin-top: 50px;
-    margin-bottom: 50px;
+    /* margin-bottom: 50px; */
     }
 `
 export const HeroWrapper =  styled.div`
@@ -30,12 +30,10 @@ export const HeroWrapper =  styled.div`
 export const InfoRow =  styled.div`
     display: flex;
     flex-wrap: wrap;
-    /* grid-auto-columns: minmax(auto, 1fr); */
+    grid-auto-columns: minmax(auto, 1fr);
     align-items: center;
     justify-content: space-around;
-    /* padding: 0 20px; */
-    /* background-color: yellow; */
-
+    margin-top: 15px;
     @media screen and (max-width:768px){
         margin-bottom: 100px;
         /* grid-template-areas:${({imgStart}) => (imgStart? `'col1' 'col2'` : `'col1' 'col1' col2 col2;`)}; */
@@ -47,19 +45,18 @@ export const Column1 = styled.div`
     /* padding: 0 15px; */
     grid-area: col1;
     /* border: 1px solid black; */
+
+    padding: 20px;
+    width: 500px;
     `
 export const Column2 = styled.div`
-    /* margin-bottom: 15px; */
-    /* width: 50%; */
-    /* padding: 0 15px; */
-    /* border: 1px solid black; */
-    /* border: 1px solid black; */
-    display: grid;
+    /* display: grid; */
+    width: 400px;
     grid-area:col2;
-    /* grid-template-columns: 100px 100px 100px 100px;
-    grid-template-rows: 80px 80px 80px 80px;  */
     column-gap: 10px;
     row-gap: 15px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
 
     
     @media screen and (max-width:768px) {
@@ -71,15 +68,15 @@ export const Column2 = styled.div`
 `
 
 export const TextWrapper= styled.div`
-    max-width:540px;
+    /* max-width:540px; */
     padding-top: 0;
     padding-bottom: 60px;
 `
 export const TopLine= styled.div`
     
-    font-size: 25px;
+    font-size: 35px;
     line-height: 1.1;
-    font-weight: 400;
+    font-weight: 600;
     letter-spacing: 1.4px;
     text-transform: capitalize;
     margin-bottom: 16px;
@@ -97,11 +94,12 @@ export const BtnWrap = styled.div`
 
 export const ImgWrap = styled.div`
     max-width: 555px;
-    height: 100%;
+    /* height: 100%; */
+    border: 1px solid black;
 `
 export const Img = styled.img`
-    max-width: ${({size}) => size};
-    height: 100%;
+    width: ${({size}) => size};
+    
 
     @media screen and (max-width:768px) {
         max-width:  ${({small_size}) => small_size};
@@ -113,7 +111,7 @@ export const Button = styled.button`
     height: 50px;
     letter-spacing: 0.5px;
     line-height: 50px;
-    padding: 0 35px 0 35px;
+    /* padding: 0 35px 0 35px; */
     font-size: 15px;
     background-color: #274a8b;
     color: white;
@@ -131,7 +129,7 @@ export const Button = styled.button`
     }
 `
 export const ColumnSocials = styled.h4`
-    color: whitesmoke ;
+    
     font-size: 20px;
     font-weight: 500;
 
@@ -149,7 +147,7 @@ export const HeaderTopic = styled.div`
 `
 export const Statement = styled.p`
     color: #274a8b ;
-    font-size: 20px;
+    font-size: 16px;
 
     @media screen and (max-width:768px) {
         text-align: center;

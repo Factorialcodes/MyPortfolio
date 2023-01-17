@@ -1,6 +1,3 @@
-
-import Hero from "./Components/Hero/hero.components";
-import Navbar from "./Components/Navbar/navbar.component"
 import Home from "./Components/Pages/home.component";
 
 

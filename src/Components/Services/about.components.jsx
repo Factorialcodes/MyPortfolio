@@ -30,12 +30,16 @@ const About = ({quote,id,quoteHeader,img,number,borderLine,size}) => {
                         </TextWrapper>
                     </Column1>
                     <Column2>
-                        <Img size={size} src={img}/>
+
+                        {/* {borderLine=> borderLine ?(<Img size={size} src={img}/>): (<Stats borderLine={borderLine}>{number}</Stats>)} */}
+                        <ImgWrap>
+                            <Img size={size} src={img}/>
+                        </ImgWrap>
+                        {/* <Stats borderLine={borderLine}>{number}</Stats>  
                         <Stats borderLine={borderLine}>{number}</Stats>  
                         <Stats borderLine={borderLine}>{number}</Stats>  
-                        <Stats borderLine={borderLine}>{number}</Stats>  
-                        <Stats borderLine={borderLine}>{number}</Stats>  
-                        
+                        <Stats borderLine={borderLine}>{number}</Stats>   */}
+                        {}
                     </Column2>
                 </InfoRow>
             </HeroWrapper>
