@@ -95,9 +95,17 @@ export const BtnWrap = styled.div`
 export const ImgWrap = styled.div`
     max-width: 555px;
     /* height: 100%; */
-    border: 1px solid black;
+    /* border: 1px solid black; */
+`
+export const StatsBox = styled.div`
+    display: grid;
+    grid-template-columns:120px 120px;
+    grid-template-rows:120 120px;
+    grid-column-gap: 40px;
+    grid-row-gap: 40px;
 `
 export const Img = styled.img`
+    display: ${({img}) => img ? 'none' : 'flex' };
     width: ${({size}) => size};
     
 
@@ -157,8 +165,13 @@ export const Statement = styled.p`
 export const Stats = styled.div`
     display: ${({borderLine}) => (!borderLine? 'none' : 'block')};;
     border: ${({borderLine}) => (borderLine? '1px solid black' : '')};
-    border-radius: 1px solid #274a8b;
+    /* border-radius: 1px solid #274a8b; */
     padding: 40px;
-    /* background-color: #274a8b; */
+    font-size: 40px;
+    text-align: center;
+    font-weight: 600;
+    box-shadow:0px 0px 11px rgba(0,0,0,.5);
+    background-color: #274a8b;
+    color: ghostwhite;
     
 `

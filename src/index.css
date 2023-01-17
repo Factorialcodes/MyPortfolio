@@ -1,7 +1,8 @@
 body {
   margin: 0;
-  font-family: 'recoleta';
+  font-family: 'recoleta', 'poppins';
   width:100%;
+  box-sizing: border-box;
 }
 
 code{

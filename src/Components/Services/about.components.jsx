@@ -13,7 +13,8 @@ import { BtnWrap,
     Img,
     HeaderTopic,
     Statement,
-    Stats
+    Stats,
+    StatsBox
 } from './about.styled'
 
 const About = ({quote,id,quoteHeader,img,number,borderLine,size}) => {
@@ -35,11 +36,12 @@ const About = ({quote,id,quoteHeader,img,number,borderLine,size}) => {
                         <ImgWrap>
                             <Img size={size} src={img}/>
                         </ImgWrap>
-                        {/* <Stats borderLine={borderLine}>{number}</Stats>  
-                        <Stats borderLine={borderLine}>{number}</Stats>  
-                        <Stats borderLine={borderLine}>{number}</Stats>  
-                        <Stats borderLine={borderLine}>{number}</Stats>   */}
-                        {}
+                        <StatsBox>
+                            <Stats borderLine={borderLine}>{number}</Stats>  
+                            <Stats borderLine={borderLine}>{number}</Stats>  
+                            <Stats borderLine={borderLine}>{number}</Stats>  
+                            <Stats borderLine={borderLine}>{number}</Stats>  
+                        </StatsBox>
                     </Column2>
                 </InfoRow>
             </HeroWrapper>
